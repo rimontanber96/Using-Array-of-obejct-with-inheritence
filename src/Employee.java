@@ -1,20 +1,15 @@
-public class Employee {
+public class Employee extends Person {
 
-    private String name;
     private int employeeId;
     private double salary;
 
     public Employee() {
     }
 
-    public Employee(String name, int employeeId, double salary) {
-        this.name = name;
+    public Employee(String name, int age, int employeeId, double salary) {
+        super(name, age);
         this.employeeId = employeeId;
         this.salary = salary;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setEmployeeId(int employeeId) {
@@ -25,9 +20,11 @@ public class Employee {
         this.salary = salary;
     }
 
+    @Override
     public void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Employee ID: " + employeeId);
-        System.out.println("Salary: " + salary);
+        super.display();
+        System.out.println("Employee ID: " + this.employeeId);
+        System.out.println("Salary: " + this.salary);
+        System.out.println("-----------------------------");
     }
 }

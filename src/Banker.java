@@ -1,13 +1,13 @@
-public class Manager extends Employee {
+public class Banker extends Employee {
 
     private String department;
     private int teamSize;
 
-    public Manager() {
+    public Banker() {
     }
 
-    public Manager(String name, int employeeId, double salary,
-                   String department, int teamSize) {
+    public Banker(String name, int employeeId, double salary,
+                  String department, int teamSize) {
         super(name, employeeId, salary);
         this.department = department;
         this.teamSize = teamSize;

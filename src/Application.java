@@ -2,11 +2,11 @@ public class Application {
 
     public static void main(String[] args) {
 
-        Manager[] managers = new Manager[3];
+        BranchManager[] managers = new BranchManager[3];
 
-        managers[0] = new Manager("Rahim", 101, 80000, "Sales", 10);
-        managers[1] = new Manager("Karim", 102, 90000, "IT", 15);
-        managers[2] = new Manager("Sara", 103, 85000, "HR", 6);
+        managers[0] = new BranchManager("Rahim", 101, 120000, "Sonali Bank", 250, "Dhaka Main", 25);
+        managers[1] = new BranchManager("Karim", 102, 135000, "Sonali Bank", 300, "Chattogram", 30);
+        managers[2] = new BranchManager("Sara", 103, 110000, "Sonali Bank", 180, "Sylhet", 18);
 
         for (int i = 0; i < managers.length; i++) {
             managers[i].display();
